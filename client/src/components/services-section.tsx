@@ -12,7 +12,7 @@ const services = [
   },
   {
     icon: "fas fa-graduation-cap",
-    title: "Courses",
+    title: "Courses (Coming Soon). You can check the podcast to get a glance!",
     description: "Practical courses that teach and help you to implement neuroscience in your company. They are also packed with mini-exercises for improved retention.",
     color: "nature-green",
     hoverColor: "sage"
@@ -61,9 +61,49 @@ export default function ServicesSection() {
                 {service.title}
               </h3>
               <p className="text-gray-300 mb-6">{service.description}</p>
-              <button className="text-[hsl(var(--light-green))] hover:text-[hsl(var(--nature-green))] transition-colors duration-300 font-semibold">
-                Learn More <i className="fas fa-arrow-right ml-2"></i>
-              </button>
+              
+              {/* AI Startup Agent - Single link */}
+              {service.title === "AI Startup Agent" && (
+                <a
+                  href="https://neotequpt.replit.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[hsl(var(--light-green))] text-[hsl(var(--deep-green))] px-6 py-3 rounded-lg font-semibold hover:bg-[hsl(var(--nature-green))] transition-colors duration-300"
+                >
+                  Try AI Agent
+                </a>
+              )}
+              
+              {/* Courses - No button, coming soon */}
+              {service.title.includes("Courses") && (
+                <div className="text-[hsl(var(--light-green))] font-semibold">
+                  Coming Soon!
+                </div>
+              )}
+              
+              {/* AI Podcast - Two buttons */}
+              {service.title === "AI Podcast" && (
+                <div className="flex flex-col gap-3">
+                  <a
+                    href="https://open.spotify.com/show/1RJ2M29oEHaORdCeFEpMuW?si=df4d87bf4ea94aa6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-[#1DB954] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#1ed760] transition-colors duration-300"
+                  >
+                    <i className="fab fa-spotify mr-2"></i>
+                    Listen on Spotify
+                  </a>
+                  <a
+                    href="https://podcasts.apple.com/us/podcast/startup-brainframe/id1810706175"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-[#A855F7] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#9333EA] transition-colors duration-300"
+                  >
+                    <i className="fab fa-apple mr-2"></i>
+                    Listen on Apple Podcasts
+                  </a>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
