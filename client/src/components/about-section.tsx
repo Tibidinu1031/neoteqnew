@@ -3,10 +3,8 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { useRef } from "react";
 
 const stats = [
-  { value: "500+", label: "Projects Completed" },
-  { value: "150+", label: "Happy Clients" },
-  { value: "50+", label: "Team Members" },
-  { value: "5+", label: "Years Experience" }
+  { value: "3.5K+", label: "Downloads" },
+  { value: "80+", label: "(5 star) reviews*" }
 ];
 
 export default function AboutSection() {
@@ -24,20 +22,11 @@ export default function AboutSection() {
           >
             <h2 className="text-5xl font-bold gradient-text mb-8">About Neoteq</h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              We are a forward-thinking technology company dedicated to pushing the boundaries of what's possible. 
-              Our team of experts combines creativity with technical excellence to deliver solutions that shape the future.
+              Neoteq sits at the intersection of AI, entrepreneurial education and neuroscience. Neoteq's mission is to build the new field of neuroentrepreneurship.
             </p>
             <p className="text-gray-300 mb-8 leading-relaxed">
-              Founded on the principles of innovation and excellence, we've been at the forefront of technological advancement, 
-              helping businesses transform their digital landscape with cutting-edge solutions.
+              That means a fundamental shift in how startups are built, ran and scaled using a brain-first and human-centric approach. It requires a market education in advance and that is precisely what the podcast is about, as mentioned above.
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-[hsl(var(--sage))] to-[hsl(var(--nature-green))] rounded-lg font-semibold transition-transform duration-300"
-            >
-              Our Story
-            </motion.button>
           </motion.div>
 
           <motion.div
