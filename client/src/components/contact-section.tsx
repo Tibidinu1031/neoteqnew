@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import profileImage from "@assets/1740159016379.jpg";
 
 const contactInfo = [
   {
@@ -93,13 +94,22 @@ export default function ContactSection() {
                   transition={{ duration: 0.8, delay: index * 0.1 }}
                   className="glass-effect rounded-2xl p-6 hover-lift"
                 >
-                  <div className="flex items-center space-x-4">
-                    <div className={`w-12 h-12 bg-gradient-to-r ${info.gradient} rounded-lg flex items-center justify-center`}>
-                      <i className={`${info.icon} text-white`}></i>
+                  <div className="flex flex-col items-center text-center space-y-4">
+                    <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-[hsl(var(--light-green))]">
+                      <img 
+                        src={profileImage} 
+                        alt="Tiberius Dinu" 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg">{info.title}</h3>
-                      <p className="text-gray-300 whitespace-pre-line">{info.content}</p>
+                      <h3 className="font-semibold text-lg mb-2">{info.title}</h3>
+                      <a 
+                        href={`mailto:${info.content}`}
+                        className="text-gray-300 hover:text-[hsl(var(--light-green))] transition-colors duration-300 underline"
+                      >
+                        {info.content}
+                      </a>
                     </div>
                   </div>
                 </motion.div>
