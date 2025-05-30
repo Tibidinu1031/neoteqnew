@@ -8,30 +8,26 @@ import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
   {
-    icon: "fas fa-map-marker-alt",
-    title: "Address",
-    content: "123 Tech Street, Innovation District\nSan Francisco, CA 94105",
-    gradient: "from-[hsl(var(--light-green))] to-[hsl(var(--nature-green))]"
-  },
-  {
-    icon: "fas fa-phone",
-    title: "Phone",
-    content: "+1 (555) 123-4567",
-    gradient: "from-[hsl(var(--nature-green))] to-[hsl(var(--sage))]"
-  },
-  {
     icon: "fas fa-envelope",
     title: "Email",
-    content: "hello@neoteq.com",
+    content: "tiberiusdinu@neoteq.us",
     gradient: "from-[hsl(var(--sage))] to-[hsl(var(--cream))]"
   }
 ];
 
 const socialLinks = [
-  { icon: "fab fa-twitter", gradient: "from-[hsl(var(--light-green))] to-[hsl(var(--nature-green))]" },
-  { icon: "fab fa-linkedin", gradient: "from-[hsl(var(--nature-green))] to-[hsl(var(--sage))]" },
-  { icon: "fab fa-github", gradient: "from-[hsl(var(--sage))] to-[hsl(var(--cream))]" },
-  { icon: "fab fa-instagram", gradient: "from-[hsl(var(--cream))] to-[hsl(var(--light-green))]" }
+  { 
+    icon: "fas fa-calendar-alt", 
+    gradient: "from-[hsl(var(--light-green))] to-[hsl(var(--nature-green))]",
+    href: "https://calendly.com/tiberiusdinu-neoteq/neoteq-business-opportunities",
+    title: "Schedule Meeting"
+  },
+  { 
+    icon: "fab fa-linkedin", 
+    gradient: "from-[hsl(var(--nature-green))] to-[hsl(var(--sage))]",
+    href: "https://www.linkedin.com/in/tiberius-dinu-51a625170/",
+    title: "LinkedIn"
+  }
 ];
 
 export default function ContactSection() {
@@ -82,85 +78,10 @@ export default function ContactSection() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="max-w-2xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="glass-effect rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-6 gradient-text">Send us a message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <Input
-                      type="text"
-                      name="firstName"
-                      placeholder="First Name"
-                      value={formData.firstName}
-                      onChange={handleInputChange}
-                      className="bg-white bg-opacity-10 border-white border-opacity-20 focus:border-[hsl(var(--light-green))] placeholder-gray-400"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Input
-                      type="text"
-                      name="lastName"
-                      placeholder="Last Name"
-                      value={formData.lastName}
-                      onChange={handleInputChange}
-                      className="bg-white bg-opacity-10 border-white border-opacity-20 focus:border-[hsl(var(--cyber-cyan))] placeholder-gray-400"
-                      required
-                    />
-                  </div>
-                </div>
-                <div>
-                  <Input
-                    type="email"
-                    name="email"
-                    placeholder="Email Address"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="bg-white bg-opacity-10 border-white border-opacity-20 focus:border-[hsl(var(--light-green))] placeholder-gray-400"
-                    required
-                  />
-                </div>
-                <div>
-                  <Input
-                    type="text"
-                    name="subject"
-                    placeholder="Subject"
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    className="bg-white bg-opacity-10 border-white border-opacity-20 focus:border-[hsl(var(--light-green))] placeholder-gray-400"
-                    required
-                  />
-                </div>
-                <div>
-                  <Textarea
-                    name="message"
-                    placeholder="Your Message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    rows={6}
-                    className="bg-white bg-opacity-10 border-white border-opacity-20 focus:border-[hsl(var(--light-green))] placeholder-gray-400 resize-none"
-                    required
-                  />
-                </div>
-                <Button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-[hsl(var(--light-green))] to-[hsl(var(--nature-green))] hover:scale-105 transition-transform duration-300 cyber-glow"
-                >
-                  Send Message
-                </Button>
-              </form>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8 }}
           >
             <div className="space-y-8">
@@ -190,17 +111,24 @@ export default function ContactSection() {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="glass-effect rounded-2xl p-6"
               >
-                <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
-                <div className="flex space-x-4">
+                <h3 className="font-semibold text-lg mb-4 text-center">Connect With Us</h3>
+                <div className="flex justify-center space-x-6">
                   {socialLinks.map((social, index) => (
                     <motion.a
                       key={index}
-                      href="#"
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
-                      className={`w-10 h-10 bg-gradient-to-r ${social.gradient} rounded-lg flex items-center justify-center transition-transform duration-300`}
+                      className={`flex flex-col items-center space-y-2 group`}
                     >
-                      <i className={`${social.icon} text-white`}></i>
+                      <div className={`w-12 h-12 bg-gradient-to-r ${social.gradient} rounded-lg flex items-center justify-center transition-transform duration-300`}>
+                        <i className={`${social.icon} text-white text-lg`}></i>
+                      </div>
+                      <span className="text-sm text-gray-300 group-hover:text-[hsl(var(--light-green))] transition-colors duration-300">
+                        {social.title}
+                      </span>
                     </motion.a>
                   ))}
                 </div>
