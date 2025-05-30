@@ -16,27 +16,9 @@ export default function HeroSection() {
             <span className="gradient-text">BRAIN-BASED</span><br />
             <span className="text-white">ENTREPRENEURSHIP</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed text-center">
             Improving startups' performance, decision-making and interactions using neuroscience principles.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => window.open('https://neotequpt.replit.app/', '_blank')}
-              className="px-8 py-4 bg-gradient-to-r from-[hsl(var(--light-green))] to-[hsl(var(--nature-green))] rounded-lg font-semibold transition-transform duration-300 cyber-glow"
-            >
-              AI Startup Agent
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => window.open('https://www.youtube.com/watch?v=2sTIMFEapYU', '_blank')}
-              className="px-8 py-4 glass-effect rounded-lg font-semibold hover:bg-white hover:bg-opacity-20 transition-all duration-300"
-            >
-              Watch Demo for V1
-            </motion.button>
-          </div>
         </motion.div>
       </div>
 
