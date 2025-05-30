@@ -33,12 +33,12 @@ export default function Navigation() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
+            <div className="text-2xl font-bold gradient-text">Neoteq</div>
             <img 
               src={logoPath} 
               alt="Neoteq Logo"
-              className="w-8 h-8 object-contain"
+              className="w-8 h-8 object-contain rounded-lg"
             />
-            <div className="text-2xl font-bold gradient-text">Neoteq</div>
           </div>
           <div className="hidden md:flex space-x-8">
             <button

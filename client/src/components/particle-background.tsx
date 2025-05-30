@@ -44,14 +44,7 @@ export default function ParticleBackground() {
           }}
         />
       ))}
-      {/* Floating Neoteq logo in top-left */}
-      <div className="absolute top-20 left-10 w-16 h-16 opacity-30 animate-float">
-        <img 
-          src={logoPath} 
-          alt="Neoteq Logo"
-          className="w-full h-full object-contain"
-        />
-      </div>
+
     </div>
   );
 }
