@@ -60,12 +60,6 @@ export default function Navigation() {
               About
             </button>
             <button
-              onClick={() => scrollToSection("portfolio")}
-              className="hover:text-[hsl(var(--light-green))] transition-colors duration-300"
-            >
-              Portfolio
-            </button>
-            <button
               onClick={() => scrollToSection("contact")}
               className="hover:text-[hsl(var(--light-green))] transition-colors duration-300"
             >
