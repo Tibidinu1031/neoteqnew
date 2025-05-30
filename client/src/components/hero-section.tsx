@@ -23,9 +23,10 @@ export default function HeroSection() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => window.open('https://neotequpt.replit.app/', '_blank')}
               className="px-8 py-4 bg-gradient-to-r from-[hsl(var(--light-green))] to-[hsl(var(--nature-green))] rounded-lg font-semibold transition-transform duration-300 cyber-glow"
             >
-              Explore Solutions
+              Check AI Startup Agent
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
