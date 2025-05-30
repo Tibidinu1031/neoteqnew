@@ -31,9 +31,10 @@ export default function HeroSection() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => window.open('https://www.youtube.com/watch?v=2sTIMFEapYU', '_blank')}
               className="px-8 py-4 glass-effect rounded-lg font-semibold hover:bg-white hover:bg-opacity-20 transition-all duration-300"
             >
-              Watch Demo
+              Watch Demo for V1
             </motion.button>
           </div>
         </motion.div>
