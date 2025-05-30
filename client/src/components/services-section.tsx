@@ -5,45 +5,24 @@ import { useRef } from "react";
 const services = [
   {
     icon: "fas fa-robot",
-    title: "AI & Machine Learning",
-    description: "Advanced AI solutions that automate processes and provide intelligent insights for your business growth.",
+    title: "AI Startup Agent",
+    description: "Hyper-personalized Chief Science Officer synced with your psychological profile. It also explains its outputs from a neuroscience perspective so you can also understand what drives your decision-making process.",
     color: "light-green",
     hoverColor: "nature-green"
   },
   {
-    icon: "fas fa-mobile-alt",
-    title: "Mobile Development",
-    description: "Native and cross-platform mobile applications with stunning UI/UX and seamless performance.",
+    icon: "fas fa-graduation-cap",
+    title: "Courses",
+    description: "Practical courses that teach and help you to implement neuroscience in your company. They are also packed with mini-exercises for improved retention.",
     color: "nature-green",
     hoverColor: "sage"
   },
   {
-    icon: "fas fa-cloud",
-    title: "Cloud Solutions",
-    description: "Scalable cloud infrastructure and services that grow with your business needs and requirements.",
+    icon: "fas fa-podcast",
+    title: "AI Podcast",
+    description: "Built to educate the market on the potential and benefits of (using) neuroentrepreneurship. Just like the courses, it covers all the areas of a startup. It also offers solutions on problems startup people regularly deal with.",
     color: "sage",
     hoverColor: "light-green"
-  },
-  {
-    icon: "fas fa-shield-alt",
-    title: "Cybersecurity",
-    description: "Comprehensive security solutions to protect your digital assets and maintain data integrity.",
-    color: "cream",
-    hoverColor: "nature-green"
-  },
-  {
-    icon: "fas fa-chart-line",
-    title: "Data Analytics",
-    description: "Transform raw data into actionable insights with advanced analytics and visualization tools.",
-    color: "light-green",
-    hoverColor: "sage"
-  },
-  {
-    icon: "fas fa-globe",
-    title: "Web Development",
-    description: "Modern, responsive web applications built with the latest technologies and best practices.",
-    color: "nature-green",
-    hoverColor: "cream"
   }
 ];
 
@@ -60,9 +39,9 @@ export default function ServicesSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold gradient-text mb-6">Our Services</h2>
+          <h2 className="text-5xl font-bold gradient-text mb-6">Our Products</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Cutting-edge solutions powered by the latest technology trends and innovative approaches.
+            Neuroscience-powered solutions designed to enhance startup performance and decision-making.
           </p>
         </motion.div>
 

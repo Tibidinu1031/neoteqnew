@@ -51,7 +51,7 @@ export default function Navigation() {
               onClick={() => scrollToSection("services")}
               className="hover:text-[hsl(var(--light-green))] transition-colors duration-300"
             >
-              Services
+              Products
             </button>
             <button
               onClick={() => scrollToSection("about")}
