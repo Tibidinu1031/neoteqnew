@@ -11,27 +11,27 @@ const contactInfo = [
     icon: "fas fa-map-marker-alt",
     title: "Address",
     content: "123 Tech Street, Innovation District\nSan Francisco, CA 94105",
-    gradient: "from-[hsl(var(--cyber-cyan))] to-[hsl(var(--cyber-purple))]"
+    gradient: "from-[hsl(var(--light-green))] to-[hsl(var(--nature-green))]"
   },
   {
     icon: "fas fa-phone",
     title: "Phone",
     content: "+1 (555) 123-4567",
-    gradient: "from-[hsl(var(--cyber-purple))] to-[hsl(var(--cyber-pink))]"
+    gradient: "from-[hsl(var(--nature-green))] to-[hsl(var(--sage))]"
   },
   {
     icon: "fas fa-envelope",
     title: "Email",
-    content: "hello@neotech.com",
-    gradient: "from-[hsl(var(--cyber-pink))] to-[hsl(var(--cyber-mint))]"
+    content: "hello@neoteq.com",
+    gradient: "from-[hsl(var(--sage))] to-[hsl(var(--cream))]"
   }
 ];
 
 const socialLinks = [
-  { icon: "fab fa-twitter", gradient: "from-[hsl(var(--cyber-cyan))] to-[hsl(var(--cyber-purple))]" },
-  { icon: "fab fa-linkedin", gradient: "from-[hsl(var(--cyber-purple))] to-[hsl(var(--cyber-pink))]" },
-  { icon: "fab fa-github", gradient: "from-[hsl(var(--cyber-pink))] to-[hsl(var(--cyber-mint))]" },
-  { icon: "fab fa-instagram", gradient: "from-[hsl(var(--cyber-mint))] to-[hsl(var(--cyber-cyan))]" }
+  { icon: "fab fa-twitter", gradient: "from-[hsl(var(--light-green))] to-[hsl(var(--nature-green))]" },
+  { icon: "fab fa-linkedin", gradient: "from-[hsl(var(--nature-green))] to-[hsl(var(--sage))]" },
+  { icon: "fab fa-github", gradient: "from-[hsl(var(--sage))] to-[hsl(var(--cream))]" },
+  { icon: "fab fa-instagram", gradient: "from-[hsl(var(--cream))] to-[hsl(var(--light-green))]" }
 ];
 
 export default function ContactSection() {
@@ -99,7 +99,7 @@ export default function ContactSection() {
                       placeholder="First Name"
                       value={formData.firstName}
                       onChange={handleInputChange}
-                      className="bg-white bg-opacity-10 border-white border-opacity-20 focus:border-[hsl(var(--cyber-cyan))] placeholder-gray-400"
+                      className="bg-white bg-opacity-10 border-white border-opacity-20 focus:border-[hsl(var(--light-green))] placeholder-gray-400"
                       required
                     />
                   </div>
@@ -122,7 +122,7 @@ export default function ContactSection() {
                     placeholder="Email Address"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="bg-white bg-opacity-10 border-white border-opacity-20 focus:border-[hsl(var(--cyber-cyan))] placeholder-gray-400"
+                    className="bg-white bg-opacity-10 border-white border-opacity-20 focus:border-[hsl(var(--light-green))] placeholder-gray-400"
                     required
                   />
                 </div>
@@ -133,7 +133,7 @@ export default function ContactSection() {
                     placeholder="Subject"
                     value={formData.subject}
                     onChange={handleInputChange}
-                    className="bg-white bg-opacity-10 border-white border-opacity-20 focus:border-[hsl(var(--cyber-cyan))] placeholder-gray-400"
+                    className="bg-white bg-opacity-10 border-white border-opacity-20 focus:border-[hsl(var(--light-green))] placeholder-gray-400"
                     required
                   />
                 </div>
@@ -144,13 +144,13 @@ export default function ContactSection() {
                     value={formData.message}
                     onChange={handleInputChange}
                     rows={6}
-                    className="bg-white bg-opacity-10 border-white border-opacity-20 focus:border-[hsl(var(--cyber-cyan))] placeholder-gray-400 resize-none"
+                    className="bg-white bg-opacity-10 border-white border-opacity-20 focus:border-[hsl(var(--light-green))] placeholder-gray-400 resize-none"
                     required
                   />
                 </div>
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-[hsl(var(--cyber-cyan))] to-[hsl(var(--cyber-purple))] hover:scale-105 transition-transform duration-300 cyber-glow"
+                  className="w-full bg-gradient-to-r from-[hsl(var(--light-green))] to-[hsl(var(--nature-green))] hover:scale-105 transition-transform duration-300 cyber-glow"
                 >
                   Send Message
                 </Button>

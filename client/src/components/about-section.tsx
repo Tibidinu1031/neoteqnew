@@ -34,7 +34,7 @@ export default function AboutSection() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-[hsl(var(--cyber-pink))] to-[hsl(var(--cyber-purple))] rounded-lg font-semibold transition-transform duration-300"
+              className="px-8 py-4 bg-gradient-to-r from-[hsl(var(--sage))] to-[hsl(var(--nature-green))] rounded-lg font-semibold transition-transform duration-300"
             >
               Our Story
             </motion.button>
