@@ -37,7 +37,7 @@ export default function Navigation() {
             <img 
               src={logoPath} 
               alt="Neoteq Logo"
-              className="w-8 h-8 object-contain rounded-lg"
+              className="w-8 h-8 object-contain rounded-full"
             />
           </div>
           <div className="hidden md:flex space-x-8">
