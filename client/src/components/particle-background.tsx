@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logoPath from "@assets/Neoteq Logo.png";
 
 interface Particle {
   id: number;
@@ -8,10 +9,10 @@ interface Particle {
 }
 
 const colors = [
-  "hsl(var(--cyber-cyan))",
-  "hsl(var(--cyber-purple))", 
-  "hsl(var(--cyber-pink))",
-  "hsl(var(--cyber-mint))"
+  "hsl(var(--light-green))",
+  "hsl(var(--nature-green))", 
+  "hsl(var(--sage))",
+  "hsl(var(--cream))"
 ];
 
 export default function ParticleBackground() {
@@ -43,6 +44,14 @@ export default function ParticleBackground() {
           }}
         />
       ))}
+      {/* Floating Neoteq logo in top-left */}
+      <div className="absolute top-20 left-10 w-16 h-16 opacity-30 animate-float">
+        <img 
+          src={logoPath} 
+          alt="Neoteq Logo"
+          className="w-full h-full object-contain"
+        />
+      </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ import ParticleBackground from "@/components/particle-background";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[hsl(var(--deep-black))] text-white relative">
+    <div className="min-h-screen bg-[hsl(var(--deep-green))] text-white relative">
       <ParticleBackground />
       <Navigation />
       <HeroSection />
