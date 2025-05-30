@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 const stats = [
   { value: "3.5K+", label: "Downloads" },
-  { value: "80+", label: "(5 star) reviews*" }
+  { value: "80+", label: "5 star reviews*" }
 ];
 
 export default function AboutSection() {
