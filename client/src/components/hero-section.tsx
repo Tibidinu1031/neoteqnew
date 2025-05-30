@@ -28,8 +28,8 @@ export default function HeroSection() {
             className="flex flex-col items-center cursor-pointer"
             onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            <p className="text-sm text-gray-400 mb-2 hover:text-[hsl(var(--light-green))] transition-colors duration-300">
-              Check out products below
+            <p className="text-sm text-gray-400 mb-2 hover:text-[hsl(var(--light-green))] transition-colors duration-300 font-bold underline">
+              Check the products below
             </p>
             <motion.div
               animate={{ y: [0, 10, 0] }}
