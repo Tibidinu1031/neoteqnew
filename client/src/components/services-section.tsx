@@ -11,8 +11,8 @@ const services = [
     hoverColor: "nature-green"
   },
   {
-    icon: "fas fa-graduation-cap",
-    title: "Courses (Coming Soon). You can check the podcast to get a glance!",
+    icon: "fas fa-book",
+    title: "Courses (Coming Soon) You can check the podcast to get a glance!",
     description: "Practical courses that teach and help you to implement neuroscience in your company. They are also packed with mini-exercises for improved retention.",
     color: "nature-green",
     hoverColor: "sage"
