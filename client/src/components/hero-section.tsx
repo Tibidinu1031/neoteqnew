@@ -13,11 +13,11 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <h1 className="text-6xl md:text-8xl font-bold mb-6">
-            <span className="gradient-text">FUTURE</span><br />
-            <span className="text-white">IS NOW</span>
+            <span className="gradient-text">BRAIN-BASED</span><br />
+            <span className="text-white">ENTREPRENEURSHIP</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Transforming ideas into cutting-edge digital experiences with advanced technology and innovative design solutions.
+            Improving startups' performance, decision-making and interactions using neuroscience principles.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.button
