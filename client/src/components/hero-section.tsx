@@ -16,9 +16,29 @@ export default function HeroSection() {
             <span className="gradient-text">BRAIN-BASED</span><br />
             <span className="text-white">ENTREPRENEURSHIP</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed text-center">
+          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed text-center">
             Improving startups' performance, decision-making and interactions using neuroscience principles.
           </p>
+          
+          {/* Scroll down indicator */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="flex flex-col items-center cursor-pointer"
+            onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            <p className="text-sm text-gray-400 mb-2 hover:text-[hsl(var(--light-green))] transition-colors duration-300">
+              Check out products below
+            </p>
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
+              className="text-[hsl(var(--light-green))] hover:text-[hsl(var(--nature-green))] transition-colors duration-300"
+            >
+              <i className="fas fa-chevron-down text-2xl"></i>
+            </motion.div>
+          </motion.div>
         </motion.div>
       </div>
 
