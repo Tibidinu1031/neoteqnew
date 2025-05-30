@@ -31,40 +31,40 @@ export default function Navigation() {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold gradient-text">NeoTech</div>
+          <div className="text-2xl font-bold gradient-text">Neoteq</div>
           <div className="hidden md:flex space-x-8">
             <button
               onClick={() => scrollToSection("home")}
-              className="hover:text-[hsl(var(--cyber-cyan))] transition-colors duration-300"
+              className="hover:text-[hsl(var(--light-green))] transition-colors duration-300"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection("services")}
-              className="hover:text-[hsl(var(--cyber-cyan))] transition-colors duration-300"
+              className="hover:text-[hsl(var(--light-green))] transition-colors duration-300"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className="hover:text-[hsl(var(--cyber-cyan))] transition-colors duration-300"
+              className="hover:text-[hsl(var(--light-green))] transition-colors duration-300"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("portfolio")}
-              className="hover:text-[hsl(var(--cyber-cyan))] transition-colors duration-300"
+              className="hover:text-[hsl(var(--light-green))] transition-colors duration-300"
             >
               Portfolio
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="hover:text-[hsl(var(--cyber-cyan))] transition-colors duration-300"
+              className="hover:text-[hsl(var(--light-green))] transition-colors duration-300"
             >
               Contact
             </button>
           </div>
-          <button className="md:hidden text-[hsl(var(--cyber-cyan))]">
+          <button className="md:hidden text-[hsl(var(--light-green))]">
             <i className="fas fa-bars text-xl"></i>
           </button>
         </div>

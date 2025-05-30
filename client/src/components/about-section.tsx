@@ -22,7 +22,7 @@ export default function AboutSection() {
             animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-5xl font-bold gradient-text mb-8">About NeoTech</h2>
+            <h2 className="text-5xl font-bold gradient-text mb-8">About Neoteq</h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
               We are a forward-thinking technology company dedicated to pushing the boundaries of what's possible. 
               Our team of experts combines creativity with technical excellence to deliver solutions that shape the future.

@@ -7,43 +7,43 @@ const services = [
     icon: "fas fa-robot",
     title: "AI & Machine Learning",
     description: "Advanced AI solutions that automate processes and provide intelligent insights for your business growth.",
-    color: "cyber-cyan",
-    hoverColor: "cyber-pink"
+    color: "light-green",
+    hoverColor: "nature-green"
   },
   {
     icon: "fas fa-mobile-alt",
     title: "Mobile Development",
     description: "Native and cross-platform mobile applications with stunning UI/UX and seamless performance.",
-    color: "cyber-purple",
-    hoverColor: "cyber-mint"
+    color: "nature-green",
+    hoverColor: "sage"
   },
   {
     icon: "fas fa-cloud",
     title: "Cloud Solutions",
     description: "Scalable cloud infrastructure and services that grow with your business needs and requirements.",
-    color: "cyber-mint",
-    hoverColor: "cyber-cyan"
+    color: "sage",
+    hoverColor: "light-green"
   },
   {
     icon: "fas fa-shield-alt",
     title: "Cybersecurity",
     description: "Comprehensive security solutions to protect your digital assets and maintain data integrity.",
-    color: "cyber-pink",
-    hoverColor: "cyber-purple"
+    color: "cream",
+    hoverColor: "nature-green"
   },
   {
     icon: "fas fa-chart-line",
     title: "Data Analytics",
     description: "Transform raw data into actionable insights with advanced analytics and visualization tools.",
-    color: "cyber-cyan",
-    hoverColor: "cyber-mint"
+    color: "light-green",
+    hoverColor: "sage"
   },
   {
     icon: "fas fa-globe",
     title: "Web Development",
     description: "Modern, responsive web applications built with the latest technologies and best practices.",
-    color: "cyber-purple",
-    hoverColor: "cyber-pink"
+    color: "nature-green",
+    hoverColor: "cream"
   }
 ];
 
@@ -82,7 +82,7 @@ export default function ServicesSection() {
                 {service.title}
               </h3>
               <p className="text-gray-300 mb-6">{service.description}</p>
-              <button className="text-[hsl(var(--cyber-cyan))] hover:text-[hsl(var(--cyber-pink))] transition-colors duration-300 font-semibold">
+              <button className="text-[hsl(var(--light-green))] hover:text-[hsl(var(--nature-green))] transition-colors duration-300 font-semibold">
                 Learn More <i className="fas fa-arrow-right ml-2"></i>
               </button>
             </motion.div>
