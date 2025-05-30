@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import logoPath from "@assets/Neoteq Logo.png";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +32,14 @@ export default function Navigation() {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold gradient-text">Neoteq</div>
+          <div className="flex items-center space-x-3">
+            <img 
+              src={logoPath} 
+              alt="Neoteq Logo"
+              className="w-8 h-8 object-contain"
+            />
+            <div className="text-2xl font-bold gradient-text">Neoteq</div>
+          </div>
           <div className="hidden md:flex space-x-8">
             <button
               onClick={() => scrollToSection("home")}
