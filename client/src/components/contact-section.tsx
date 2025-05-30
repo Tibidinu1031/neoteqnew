@@ -10,7 +10,7 @@ import profileImage from "@assets/1740159016379.jpg";
 const contactInfo = [
   {
     icon: "fas fa-envelope",
-    title: "Email",
+    title: "Tiberius Dinu\nNeoteq Founder & CEO",
     content: "tiberiusdinu@neoteq.us",
     gradient: "from-[hsl(var(--sage))] to-[hsl(var(--cream))]"
   }
@@ -103,7 +103,7 @@ export default function ContactSection() {
                       />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-2">{info.title}</h3>
+                      <h3 className="font-semibold text-lg mb-2 whitespace-pre-line">{info.title}</h3>
                       <a 
                         href={`mailto:${info.content}`}
                         className="text-gray-300 hover:text-[hsl(var(--light-green))] transition-colors duration-300 underline"
