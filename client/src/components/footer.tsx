@@ -13,8 +13,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-2xl font-bold gradient-text mb-4 md:mb-0">Neoteq</div>
           <div className="text-gray-300 text-center md:text-right">
-            <p>&copy; 2024 Neoteq. All rights reserved.</p>
-            <p className="text-sm mt-2">Shaping the future through innovation</p>
+            <p>&copy; 2025 Neoteq. All rights reserved.</p>
+            <p className="text-sm mt-2">Shaping the future of startups through the brain</p>
           </div>
         </div>
       </div>
